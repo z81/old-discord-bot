@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+    name: fbot
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: fbot
+    template:
+        metadata:
+            labels:
+                app: fbot
+        spec:
+            containers:
+                - name: fbot
+                  image: registry.gitlab.com/z81/fbot:latest
+                  env:
+                  - name: DISCORD_TOKEN
+                    value: MzYzNDE5Mzk0MDExMDM3NzA3.DyUonA.n0sVLoB2460-D3FpiY0J-P8k6Lc
