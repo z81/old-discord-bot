@@ -6,3 +6,7 @@ metadata:
 spec:
     selector:
         app: fbot
+    ports:
+      - port: 3007
+        targetPort: 3007
+
