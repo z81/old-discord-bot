@@ -1,7 +1,8 @@
 import { mocksRandomCommandMessages$ } from '../mock';
 import '../lib';
-import 'dotenv';
+import { config } from 'dotenv';
 import { connectWith } from '../lib';
+config();
 
 const { DISCORD_TOKEN = '' } = process.env;
 
