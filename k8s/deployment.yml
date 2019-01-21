@@ -17,4 +17,4 @@ spec:
                   image: registry.gitlab.com/z81/fbot:latest
                   env:
                   - name: DISCORD_TOKEN
-                    value: MzYzNDE5Mzk0MDExMDM3NzA3.DyUonA.n0sVLoB2460-D3FpiY0J-P8k6Lc
+                    value: Mjc0MjYzMTgxMTkzMzc5ODQw.DyeHpA.1_w3y1mNSCYNQlToezZ98gov8IY
