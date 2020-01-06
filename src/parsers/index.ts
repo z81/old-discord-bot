@@ -11,19 +11,16 @@ export type SpaceMessageParserArguments = {
 export const spaceMessageParser = ({
 	aliases,
 	maxArguments = 32
-}: SpaceMessageParserArguments) => (msg: Message, command: Command) => {
-	debugger;
-	return from(aliases).pipe(
-		filter(
-			(cmdName) =>
-				msg.message === cmdName || msg.message.startsWith(`${cmdName} `)
-		),
-		map(() => msg.message.split(' ', maxArguments)),
-		map(([ _, ...parameters ]) => ({
-			message: msg,
-			parameters,
-			command
-		})),
-		take(1)
-	);
-};
+}: SpaceMessageParserArguments) => (msg: Message, command: Command) => from(aliases).pipe(
+	filter(
+		(cmdName) =>
+			msg.message === cmdName || msg.message.startsWith(`${cmdName} `)
+	),
+	map(() => msg.message.split(' ', maxArguments)),
+	map(([_, ...parameters]) => ({
+		message: msg,
+		parameters,
+		command
+	})),
+	take(1)
+);

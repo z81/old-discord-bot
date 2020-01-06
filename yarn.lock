@@ -9,6 +9,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/events@*":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@types/events/-/events-1.2.0.tgz#81a6731ce4df43619e5c8c945383b3e62a89ea86"
+  integrity sha512-KEIlhXnIutzKwRbQkGWb/I4HFqBuUykAdHgDED6xqwXJfONCjF5VoE0cXEiurh3XauygxzeDzgtXUqvLkxFzzA==
+
 "@types/libsodium-wrappers@^0.7.3":
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/@types/libsodium-wrappers/-/libsodium-wrappers-0.7.3.tgz#c22c3547f78a3ec30725d8f88d68a0d96c1a848a"
@@ -37,6 +42,14 @@
   resolved "https://registry.yarnpkg.com/@types/sonic-boom/-/sonic-boom-0.6.1.tgz#530d17e0b971c8f41cdfd78206171155aee58795"
   integrity sha512-I0LVjE/VPehYvvMgmLZ8kSutqCaGzwDbyf74C5zoNwsb64KCppCJ7GkrLC4Sic3SzfEsGhcAVFpxR7UEpDi+bg==
   dependencies:
+    "@types/node" "*"
+
+"@types/uws@^0.13.2":
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@types/uws/-/uws-0.13.2.tgz#e3563c636132c171a4c9079620c71aba402ceb00"
+  integrity sha512-PtSuctnHZPMJKGDvpBpX+3EvL8PPcErNOv6A0HacFJV1954ggrTZusLVrZjqBrActKf/C91dbdl/piOmLMeg8A==
+  dependencies:
+    "@types/events" "*"
     "@types/node" "*"
 
 abbrev@1:

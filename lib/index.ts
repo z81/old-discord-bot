@@ -12,6 +12,4 @@ export const connectWith = (config: Config) => {
 	}
 };
 
-commandMessage$.subscribe((msgData) => {
-	msgData.command.execute(msgData);
-});
+commandMessage$.subscribe((msgData) => msgData.command.execute(msgData));

@@ -15,8 +15,8 @@ export const creteDiscordStream = (token: string) => {
 				voice: {
 					channel: {
 						join: () =>
-							msg.member!.voiceChannel &&
-							msg.member!.voiceChannel!.join()
+							msg.member && msg.member.voiceChannel &&
+							msg.member.voiceChannel.join()
 					}
 				}
 			},
