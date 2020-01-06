@@ -21,7 +21,7 @@
     "discord.js": "^11.4.2",
     "dotenv": "^6.2.0",
     "libsodium-wrappers": "^0.7.3",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "node-opus": "^0.2.7",
     "nodemon": "^1.18.9",
     "opusscript": "^0.0.6",
